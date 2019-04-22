@@ -1,0 +1,83 @@
+body{
+	margin: 0;
+}
+video{
+		position: fixed;
+		top: 0;
+		left: 0;
+		min-height: 100%;
+		min-width: 100%;
+		width: auto;
+		height: auto;
+		z-index: -1;
+	}
+
+	#pp{
+		mix-blend-mode: screen;
+		position: fixed;
+		top: 0;
+		left: 0;
+		min-height: 100%;
+		min-width: 100%;
+		width: auto;
+		height: auto;
+		opacity: 0.65;
+		z-index: -1;
+	}
+
+	#tree{
+		position: fixed;
+		top: 10;
+		right:0;
+		z-index: -1;
+	}
+
+	.fixed{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+	}
+
+	#poem{
+		position: fixed;
+		top: 0;
+		padding-left: 10px;
+			color: rgb(0,0,255);
+	}
+
+	#hide2{
+		position: fixed;
+		bottom: 0;
+		left: 0;
+	}
+
+	#hide1{
+		position: fixed;
+		bottom: 0;
+		left: 15%;
+	}
+
+	#parly{
+		position: fixed;
+		bottom: 15%;
+		right: 12%;
+		z-index: -1;
+	}
+
+	#plant3{
+		position: fixed;
+		right: 40%;
+		bottom: 0;
+	}
+
+	#plant1{
+		position: fixed;
+		top: 12%;
+		left: 5%;
+	}
+
+	#bush{
+		position: fixed;
+		bottom: 0;
+		right: 0;
+	}

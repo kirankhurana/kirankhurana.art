@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display');
+
+body{
+	background-color: rgb(81, 135, 89);
+	margin:0;
+	/*display: grid;*/
+	/*grid-template-columns: 3fr;*/
+	text-align: center;
+	justify-content: center;
+	margin-top: 100px;
+}
+
+h1{
+	color: rgb(93, 150, 102);
+	font-family: 'Karla', sans-serif;
+
+}
+
+ul{
+	list-style: none;
+	font-family: 'Karla', sans-serif;
+	padding-left: 5px;
+
+	}
+
+li{
+	padding: 1px;
+	font-weight: bold;
+	color: rgb(0,0,255);
+	}
+
+a:link{
+	text-decoration: none;
+	
+	}
+
+	a:visited{
+	color: rgb(93, 150, 102);
+}
+	
+a:hover, a:focus {
+	color: rgb(81, 135, 89);
+	}
+
+
+
+	#leaf1{
+		fill: rgb(118, 201, 50);
+	}
+
+	#leaf2{
+
+		fill: rgb(60, 196, 49);
+	}
+
+	#leaf3{
+		fill: rgb(85, 160, 46);
+	}
+
+	#leaf4{
+		fill: rgb(191, 244, 44);
+	}
+
+	#leaf5{
+		fill: rgb(100, 200, 100);
+	}
+
+@keyframes spin{
+	0%{transform: rotateY(0deg) ;}
+	100%{transform: rotateY(360deg) ;}
+	/*
+	from{ transform: rotateY(0deg) rotateX(0deg); }
+	to{ transform: rotateY(360deg) rotateX(360deg); }
+	*/
+}
+
+/* bind animation to DOM element */
+.leafy{
+	width: 1em;
+	height: 1em;
+	animation: spin;
+	animation-duration: 6s;
+	animation-timing-function: linear;
+	animation-iteration-count: infinite;
+	animation-play-state: alternate
+
+}

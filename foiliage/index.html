@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Travelling Foliage</title>
+	<link rel="icon" type="image/png" href="leafy/leaf5.svg">
+</head>
+
+	<style type="text/css">
+
+		body{
+		 /*  background-color: rgb(77, 249, 111); */
+		background-color: rgb(0,255,0);  
+		display: grid;
+		/*grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+		grid-template-columns: 1fr;
+	}
+
+	#leaf1{
+		fill: rgb(118, 201, 50);
+	}
+
+	#leaf2{
+		fill: rgb(60, 196, 49);
+	}
+
+	#leaf3{
+		fill: rgb(85, 160, 46);
+	}
+
+	#leaf4{
+		fill: rgb(191, 244, 44);
+	}
+
+	#leaf5{
+		fill: rgb(100, 200, 100);
+	}
+
+	</style> 
+<body>
+
+<!-- leaf1 -->
+	<svg class='leafy'>
+		<a xlink:href="	https://www.moma.org/calendar/exhibitions/1429?locale=en">
+		<use xlink:href="leafy.svg#leaf1" />
+		</a>
+	</svg>
+
+<!-- leaf2 -->
+	<svg class='leafy'>
+		<a xlink:href="https://www.moma.org/interactives/exhibitions/2014/matisse/the-cut-outs.html"> 
+			<use xlink:href="leafy.svg#leaf2" />
+		</a>
+	</svg>
+
+<!-- leaf3 -->
+	<svg class='leafy'>
+		<a xlink:href="https://www.netflix.com/title/80232852">
+		<use xlink:href="leafy.svg#leaf3" />
+		</a>
+	</svg>
+
+	
+
+<!-- leaf4 -->
+	<svg class='leafy'>
+		<a xlink:href="https://kirankhurana.art/garden/">
+		<use xlink:href="leafy.svg#leaf4" />
+		</a>
+	</svg>
+
+<!-- leaf5 -->
+	<svg class='leafy'>
+		<a xlink:href="http://i6.cims.nyu.edu/~kk3057/380/">
+		<use xlink:href="leafy.svg#leaf5" />
+		</a>
+	</svg>
+
+	
+
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <script>
+  $( function() {
+    $( ".leafy" ).draggable();
+  } );
+  </script>
+
+
+</body>
+</html>

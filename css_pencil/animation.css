@@ -1,0 +1,166 @@
+
+		#container{
+		margin: 0;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+			/*background */
+				background-image: url('media/notebook.png');
+			background-size: cover;
+			mix-blend-mode: luminosity;
+			position: fixed;
+			/*cartisian vector (maps)*/
+			top: 0;
+			left: 0;
+			min-height: 100%;
+			min-width: 100%;
+			/* browser calculates the aspect ratio*/
+			width: auto;
+			height: auto;
+
+	}
+
+	#scene{ /* proportion and perspective */
+		width: 25px;
+		height: 500px;
+		perspective: 600px;
+		z-index: 1;
+	}
+
+	.pencil{
+		width: 100%;
+		height: 100%;
+		position: relative;
+		transform-style: preserve-3d;
+	}
+
+	.face{
+		position: absolute; /*relative to the first non-static parent */
+		width: 25px;
+		height: 500px;
+		opacity: 1;
+		border: 1px solid rgb(198, 143, 0);
+	}
+/* s1(5) */
+	.face:nth-child(1){
+		background-color: rgb(253, 182, 0);
+		transform: rotateY(0deg) translateZ(32.5px) ;
+	}
+
+/* s2(6) */
+	.face:nth-child(2){
+		background-color: rgb(253, 182, 0);
+		transform: rotateY(45deg) translateZ(32.5px);
+	}
+/* s3(7) */ 
+	.face:nth-child(3){
+		background-color: rgb(253, 182, 0);
+		transform: rotateY(90deg) translateZ(32.5px);
+	}
+/* s4(8) */
+	.face:nth-child(4){
+		background-color: rgb(253, 182, 0);
+		transform: rotateY(135deg) translateZ(32.5px) ;
+	}
+/* s5(1) */
+	.face:nth-child(5){
+		background-color: rgb(253, 182, 0);
+		transform: rotateY(0deg) translateZ(-32.5px) ; 
+	}
+	/* s6(2) */
+	.face:nth-child(6){
+		background-color: rgb(253, 182, 0);
+		transform: rotateY(-45deg) translateZ(32.5px) ;
+	}
+/* s7(3) */
+	.face:nth-child(7){
+		background-color: rgb(253, 182, 0);
+		transform: rotateY(-90deg) translateZ(32.5px) ;
+	}
+/* s8(4) */
+	.face:nth-child(8){
+		background-color: rgb(253, 182, 0);
+		transform: rotateY(-135deg) translateZ(32.5px) ;
+	}
+
+/* animation w keyframes */
+/*spin
+	@keyframes spin{
+		0%{transform: rotateY(0deg) rotateX(0deg) rotateZ(0deg);}
+		100%{transform: rotateY(360deg)rotateX(36deg) rotateZ(36deg);}
+	}
+
+	.pencil{
+		animation-name: spin;
+		animation-duration: 5s;
+		animation-timing-function: linear;
+		animation-iteration-count: infinite;
+	}
+	 */
+
+	/*transition */ 
+
+/*write */
+	.pencil:hover{
+		transform: rotateZ(-135deg);
+		transition-duration: 2s;
+	} 
+
+
+	@keyframes write{
+		0%{transform: rotateZ(-135deg) translateX(0px) translateY(0px);}
+		100%{transform: rotateZ(-135deg) translateX(-800px) translateY(800px);}
+	}
+
+	.pencil:active{
+		animation-name: write;
+		animation-duration: 5s;
+	}
+ /* bottom */
+	.bottom {
+       position: absolute;
+        width: 65px;
+        height: 65px;
+        border-radius: 50px;
+        background: rgb(255, 193,204);
+        transform: rotateX(90deg) translateX(-20px) translateZ(-470px) ;
+      }
+
+      .bottom2{
+      	position: absolute;
+        width: 65px;
+        height: 65px;
+        border-radius: 50px;
+        background: rgb(255, 193,204);
+        transform: rotateX(90deg) translateX(-20px) translateZ(-475px) ;
+      }
+
+      .bottom3{
+      	position: absolute;
+        width: 65px;
+        height: 65px;
+        border-radius: 50px;
+        background: rgb(255, 193,204);
+        transform: rotateX(90deg) translateX(-20px) translateZ(-480px) ;
+      }
+
+      .bottom4{
+      	position: absolute;
+        width: 65px;
+        height: 65px;
+        border-radius: 50px;
+       background: rgb(255, 193,204);
+        transform: rotateX(90deg) translateX(-20px) translateZ(-485px) ;
+      }
+
+      .bottom5{
+        position: absolute;
+        width: 65px;
+        height: 65px;
+        border-radius: 50px;
+        background: radial-gradient(circle, black, rgb(229, 207, 160), rgb(221, 192, 130), rgb(229, 207, 160), rgb(221, 192, 130));
+
+        transform: rotateX(90deg) translateX(-20px) translateZ(32.5px);
+
+      }
